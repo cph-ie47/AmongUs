@@ -1,0 +1,148 @@
+body {
+    color: ghostwhite;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+
+
+//-------------------------------------------------------------------
+//NAVBAR
+
+.navbar-brand img{
+    width: 100%;
+}
+
+.navbar {
+    background-color: black;;
+    a {
+        color: ghostwhite;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .active{
+        font-weight: 700;
+    }
+    
+}
+
+
+
+
+
+//-------------------------------------------------------------------
+//INDEX.PHP
+
+
+.venstre-col {
+    height: $col-height;
+
+}
+
+.hojre-col {
+    height: $col-height;
+    background-color: black;
+    .gameRules {
+        margin-top: 80px;
+    }
+}
+
+.body-index {
+    @include bg-pic-2;
+}
+
+
+
+
+.spil-info {
+    margin-top: 50px;
+    margin-left: 30px;
+    border: thick double #32a1ce;
+}
+
+.divKnap {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+
+
+//-----------------------------------------------------
+// LOGIN.PHP
+
+.body-login {
+    @include bg-pic-1;
+}
+
+
+
+
+
+
+//-----------------------------------------------------
+// REGISTER.php
+
+
+.body-register{
+    @include bg-pic-1;
+}
+
+
+
+
+//-----------------------------------------------------
+// profile.php
+
+
+.body-profile {
+    @include bg-pic-3;
+}
+
+
+
+
+
+// ------------------------------------
+//Jumbotron
+
+
+.jumbotron {
+    @include jumbotronCSS;
+}
+
+
+
+
+
+// ------------------------------------
+
+//Canvas styling
+
+canvas{
+    padding-top: 50px;
+    position: relative;
+}
+
+#killed {
+    z-index: -2;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image:url('images/killed.png');
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 650px;
+}

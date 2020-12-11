@@ -1,0 +1,105 @@
+body {
+  color: ghostwhite; }
+
+h1 {
+  font-size: 26px; }
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center; }
+
+.navbar-brand img {
+  width: 100%; }
+
+.navbar {
+  background-color: black; }
+  .navbar a {
+    color: ghostwhite; }
+  .navbar a:hover {
+    text-decoration: underline; }
+  .navbar .active {
+    font-weight: 700; }
+
+.venstre-col {
+  height: 400px; }
+
+.hojre-col {
+  height: 400px;
+  background-color: black; }
+  .hojre-col .gameRules {
+    margin-top: 80px; }
+
+.body-index {
+  background: url(images/among-us-bg0.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.spil-info {
+  margin-top: 50px;
+  margin-left: 30px;
+  border: thick double #32a1ce; }
+
+.divKnap {
+  margin-top: 200px;
+  margin-left: 100px; }
+
+.body-login {
+  background: url(images/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.body-register {
+  background: url(images/login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.body-profile {
+  background: url(images/profil-1.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.jumbotron {
+  margin-top: 50px;
+  background-color: #616161;
+  color: white; }
+
+canvas {
+  padding-top: 50px;
+  position: relative; }
+
+#killed {
+  z-index: -2;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url("images/killed.png");
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 650px; }
+
+.gameplayKnap {
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-family: 'Press Start 2p';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 .2em gray;
+  cursor: pointer; }
+
+.gameplayKnap:active {
+  box-shadow: none;
+  position: relative;
+  top: .2em; }
